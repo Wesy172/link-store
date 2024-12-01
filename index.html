@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2FAssets%2Ficons%2Fapple-touch-icon.png?alt=media&token=69bea93a-f836-48fd-9481-1d9d7ce24562">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2FAssets%2Ficons%2Ffavicon-32x32.png?alt=media&token=185f0050-4045-41c2-8da1-10b13b92e97c">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2FAssets%2Ficons%2Ffavicon-16x16.png?alt=media&token=277ecdd4-5094-481a-a31e-39c6e7d17866">
+    <link rel="manifest" href="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2FAssets%2Ficons%2Fsite.webmanifest?alt=media&token=ec1c243c-2911-4591-b356-9c356910527e">
+    <script type="text/javascript" src="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2Fscript.js?alt=media&token=fe826868-3288-4190-bf65-44ba29e46379" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/free-hosting-a4ebf.appspot.com/o/Link%20Store%2Fstyle.css?alt=media&token=c3c6deae-b5a3-4a63-8d16-a875d056d6b2">
+    <meta charset="utf-8">
+    <title>Link Store</title>
+    <meta name="description" content="Abaixe os jogos de graça!">
+    <meta name="author" content="Wesy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+  </head>
+  <body>
+    <div id="background">
+      <img id="loading" width="100" height="100" src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-05-37_512.gif" alt="load"/>
+    </div>
+  </body>
+    <script type="module">
+       const body = document.body;
+       // Import the functions you need from the SDKs you need
+       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+       import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+       const firebaseConfig = {
+         apiKey: "AIzaSyDeDl-GCW1k5OZ9PCqOL0D6kvuJv-pg3WQ",
+         authDomain: "minecraft-store-350d4.firebaseapp.com",
+         databaseURL: "https://minecraft-store-350d4-default-rtdb.firebaseio.com",
+         projectId: "minecraft-store-350d4",
+         storageBucket: "minecraft-store-350d4.appspot.com",
+         messagingSenderId: "30261263042",
+         appId: "1:30261263042:web:151c545d3f160f0168195b"
+  };
+  
+       // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+       const db = getFirestore(app)
+       const ref = doc(db, 'app','paste')
+       const siteAppRef = await getDoc(ref)
+       let text = siteAppRef.data()['v']
+       body.innerHTML = text;
+    </script>
+</html>
