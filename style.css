@@ -1,0 +1,247 @@
+/* Settings */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  font-weight: 600;
+}
+body{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+}
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 12vw;
+}
+#header{
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-shadow: 0.5vw 0.5vw 0.5vw black;
+  box-shadow: 0 0.5vw 1vw 0 black;
+}
+#box-title_and_icon{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#icon_header{
+  height: 80%;
+  aspect-ratio: 1/1;
+  margin-right: 6%;
+}
+#title{
+  white-space: nowrap;
+  font-size: 6vw;
+}
+#search{
+  width: 45vw;
+  height: 66%;
+  border: 0;
+  border-radius: 8vw;
+  padding: 0 3vw 0 3vw;
+  box-shadow: 0.5vw 0.5vw 0.5vw black;
+  font-size: 3.25vw;
+  outline: none;
+}
+/* Main */
+main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#box{
+  position: absolute;
+  top: 8%;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  padding: 12% 0 20% 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 32vw);
+  grid-column-gap: 12vw;
+  grid-row-gap: 5vh;
+}
+.box-slot{
+  border-radius: 1pc;
+  text-decoration: none;
+  color: black;
+  cursor: none;
+  transition: 0.2s;
+}
+.slot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D3D3D3;
+  color: black;
+  padding: 2vw;
+  width: 100%;
+  font-size: 4vw;
+  border-radius: 3.5vw;
+  box-shadow: 0 0 0.8vw black;
+  word-break: break-all;
+  transition: 0.2s;
+}
+.slot:active{
+  background-color: gray;
+}
+.box-slot:hover{
+  transform: scale(1.1);
+}
+.box-img-slot{
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border: 0.5vw black solid;
+  border-radius: 3.5vw;
+}
+.img-slot{
+  pointer-events: none;
+  cursor: not-allowed;
+  width: 100%;
+  height: 100%;
+}
+.title-slot{
+  margin-top: 4px;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: black;
+}
+.title-mini{
+  font-size: 3vw;
+}
+#background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#linkstore_version{
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Alert grounp accept */
+#body_grounp{
+  position: fixed;
+  top: 0;
+  background-color: #ffffff68;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+#grounp_accept_alert{
+  overflow: hidden;
+  background-color: white;
+  width: 85%;
+  height: 25%;
+  box-shadow: 0 0 8px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#box_title_grounp_alert{
+  width: 100%;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#description_grounp_alert{
+  width: 100%;
+  padding: 0 8% 0 8%;
+}
+#box_btns_grounp{
+  width: 100%;
+  height: 2.94pc;
+  display: flex;
+  margin-top: 4%;
+}
+.btns_alert_grounp{
+  width: 50%;
+  height: 100%;
+}
+#box_checkbox_grounp_alert{
+  display: flex;
+  gap: 5px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+@media only screen and (orientation: landscape){
+  header{
+    height: 6vw;
+  }
+  #title{
+    font-size: 4vw;
+  }
+  #search{
+    font-size: 2.5vw;
+    cursor: text;
+  }
+  .slot{
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 1pc;
+    cursor: pointer;
+  }
+  .box-img-slot{
+    border: 3px solid black;
+    border-radius: 1pc;
+  }
+  #box{
+    top: 12%;
+    padding: 6% 0 6% 0;
+    grid-template-columns: repeat(3, 16vw);
+    grid-column-gap: 10vw;
+    grid-row-gap: 8vh;
+  }
+  .title-mini{
+    font-size: 1.5vw;
+  }
+  #grounp_accept_alert{
+    width: 40%;
+    height: 56%;
+  }
+  .btns_alert_grounp{
+    cursor: pointer;
+  }
+}
