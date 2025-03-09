@@ -42,4 +42,17 @@
        let text = siteAppRef.data()['v']
        body.innerHTML = text;
     </script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6b9e1738-203b-44a0-ac2c-d15044fa5d4d",
+      safari_web_id: "web.onesignal.auto.27be598e-7a22-4ed6-a01a-10378439b214",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </html>
