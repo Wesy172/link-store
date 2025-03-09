@@ -40,7 +40,6 @@
        const ref = doc(db, 'app','paste')
        const siteAppRef = await getDoc(ref)
        let text = siteAppRef.data()['v']
-       body.innerHTML = text;
     </script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
