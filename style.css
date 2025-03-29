@@ -151,61 +151,6 @@ main{
   justify-content: center;
 }
 
-/* Alert grounp accept */
-#body_grounp{
-  position: fixed;
-  top: 0;
-  background-color: #ffffff68;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-}
-#grounp_accept_alert{
-  overflow: hidden;
-  background-color: white;
-  width: 85%;
-  height: 25%;
-  box-shadow: 0 0 8px 0;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-#box_title_grounp_alert{
-  width: 100%;
-  background-color: blue;
-  color: white;
-  font-weight: 700;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-#description_grounp_alert{
-  width: 100%;
-  padding: 0 8% 0 8%;
-}
-#box_btns_grounp{
-  width: 100%;
-  height: 2.94pc;
-  display: flex;
-  margin-top: 4%;
-}
-.btns_alert_grounp{
-  width: 50%;
-  height: 100%;
-}
-#box_checkbox_grounp_alert{
-  display: flex;
-  gap: 5px;
-  margin-top: 5%;
-  margin-left: 5%;
-}
-
 @media only screen and (orientation: landscape){
   header{
     height: 6vw;
@@ -236,12 +181,5 @@ main{
   }
   .title-mini{
     font-size: 1.5vw;
-  }
-  #grounp_accept_alert{
-    width: 40%;
-    height: 56%;
-  }
-  .btns_alert_grounp{
-    cursor: pointer;
   }
 }
