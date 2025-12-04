@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wesy-linkstore.netlify.app/assets/app_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://wesy-linkstore.netlify.app/assets/app_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://wesy-linkstore.netlify.app/assets/app_icon/favicon-16x16.png">
+    <link rel="manifest" href="https://wesy-linkstore.netlify.app/assets/app_icon/site.webmanifest">
+    <meta name="description" content="Esse site é para que abaixem o Fnaf Security Breach e atualizem quando quizer de graça!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="Wesy">
+    <title>Fnaf Security Breach Free</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Sans-Serif;
+      }
+      body{
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        transition: 1s;
+      }
+      #header{
+        background-color: blue;
+        color: white;
+        height: 6.8vw;
+        box-shadow: 0 1px 2px 0 black;
+        display: flex;
+        align-items: center;
+      }
+      #icon-back{
+        margin-left: 4vw;
+        font-weight: 800;
+        position: relative;
+        color: white;
+        font-size: 6vw;
+      }
+      #icon-back:before{
+        position: absolute;
+        top: 47.22%;
+        left: 1.3vw;
+        content: '';
+        background-color: white;
+        width: 4vw;
+        height: 1vw;
+      }
+      #icon-linkstore{
+        height: 90%;
+        aspect-ratio: 1/1;
+        margin-left: 30vw;
+        cursor: pointer;
+      }
+      #title-linkstore{
+        margin-left: 5px;
+        font-size: 1.8vh;
+        cursor: pointer;
+      }
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #box-background-Image{
+        width: 100%;
+        aspect-ratio: 18/9;
+      }
+      #background-Image{
+        width: 100%;
+        height: 100%;
+      }
+      #icon{
+        width: 6pc;
+        aspect-ratio: 1/1;
+        box-shadow: 0 0 5px 0;
+        position: absolute;
+        top: 25.5%;
+        left: 39%;
+        border: 1px black solid;
+        border-radius: 1pc;
+        z-index: 4;
+      }
+      #title{
+        margin-top: 3pc;
+        text-align: center;
+      }
+      #version-app{
+        font-size: 1.2vh;
+      }
+      #download{
+        background-color: blue;
+        color: white;
+        font-size: 1pc;
+        font-weight: 600;
+        width: 80%;
+        height: 2.5pc;
+        border: 2px #00ff00 solid;
+        border-radius: 1pc;
+        margin-top: 2pc;
+        transition: 0.2s;
+      }
+      #download:active{
+        transform: scale(1.08);
+      }
+      #box_about{
+        background-color: blue;
+        color: white;
+        padding: 1pc;
+        border-radius: 1pc;
+        margin-top: 3pc;
+        list-style: none;
+        font-weight: 600;
+      }
+      #box_images{
+        background-color: transparent;
+        display: flex;
+        width: 90%;
+        aspect-ratio: 18/9;
+        justify-content: center;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        gap: 5px;
+        margin: 2pc 0 2pc 0;
+        border-radius: 1pc;
+      }
+      .img_about{
+        border-radius: 1pc;
+      }
+      #first_img{
+        margin-left: 48pc;
+      }
+      @media only screen and (orientation: landscape){
+        #icon-back{
+          cursor: pointer;
+        }
+        #title-linkstore{
+          margin-left: 5px;
+        }
+        #header{
+          height: 2pc;
+        }
+        #title-linkstore{
+          margin-left: 0.8%;
+          font-size: 1.2pc;
+        }
+        #icon-linkstore{
+          margin-left: 35%;
+        }
+        #background-Image{
+          display: none;
+        }
+        #box-background-Image{
+          position: absolute;
+          width: 8pc;
+          aspect-ratio: 1/1;
+          top: 4pc;
+          left: 2.5pc;
+          z-index: 4;
+        }
+        #icon{
+          position: static;
+          width: 100%;
+          height: 100%;
+          border-radius: 1pc;
+        }
+        #title{
+          position: absolute;
+          font-size: 2.5pc;
+          top: 2pc;
+          left: 13pc;
+        }
+        #version-app{
+          display: none;
+        }
+        #download{
+          position: absolute;
+          top: 6.5pc;
+          left: 13.6pc;
+          width: 26pc;
+          height: 3pc;
+          cursor: pointer;
+        }
+        #box_images{
+          width: 75%;
+        }
+        #first_img{
+          margin-left: 88pc;
+        }
+        #box_about{
+          margin-top: 14pc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="header">
+        <h1 id="icon-back">&#60;</h1>
+        <img id="icon-linkstore" src="https://wesy-linkstore.netlify.app/assets/game_icons/linkstore.webp" alt="Link Store"/>
+        <h4 id="title-linkstore">Link Store</h4>
+      </nav>
+    </header>
+    <main>
+      <div id="box-background-Image">
+        <img id="background-Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKRrEVmPl68qjUoQdsVoJMK6i08Ks5WwZo7-gV58Iaa9woMdM2DTQLFY&s=10" alt="papel de parede de security breach">
+        <img id="icon" src="https://wesy-linkstore.netlify.app/assets/game_icons/linkstore.security-breach_icon.webp" alt="icone de Security Breach">
+      </div>
+      <h1 id="title">Security Breach Fan-Made</h1>
+      <h6 id="version-app"></h6>
+      <button id="download">Baixar</button>
+      <ul id="box_about">
+        <li class="about">Nome: Security Breach</li>
+        <li class="about">Pacote: com.fnaf.securitybeach</li>
+        <li class="about">Versão: </li>
+        <li class="about">Peso: </li>
+        <li class="about">Android: </li>
+        <li class="about">Criado Por: Fãn</li>
+        <li class="about">Última atualização aqui: </li>
+        <li class="about">Lançado em: set. de 2024</li>
+      </ul>
+      <div id="box_images">
+        <img id="first_img" class="img_about" src="https://wesy-linkstore.netlify.app/assets/photos_of_the_games/Security_breach/linkstore.security-breach_photo1.webp" alt="security breach"/>
+        <img class="img_about" src="https://wesy-linkstore.netlify.app/assets/photos_of_the_games/Security_breach/linkstore.security-breach_photo2.webp" alt="security breach"/>
+        <img class="img_about" src="https://wesy-linkstore.netlify.app/assets/photos_of_the_games/Security_breach/linkstore.security-breach_photo3.webp" alt="security breach"/>
+      </div>
+    </main>
+    <script type="text/javascript">
+      const iconLinkstore = document.getElementById("icon-linkstore")
+      const titleLinkstore = document.getElementById("title-linkstore")
+      const aboutEls = document.getElementsByClassName("about")
+      let iconBack = document.getElementById("icon-back")
+      iconBack.addEventListener('click', function(){
+        window.history.back();
+      })
+      let elDownload = document.getElementById("download")
+      elDownload.addEventListener('click', (event) => {
+        elDownload.style.backgroundColor = 'gray';
+        elDownload.style.border = 'gray';
+      })
+    </script>
+    <script type="module">
+       // Import the functions you need from the SDKs you need
+       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+       import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+       // TODO: Add SDKs for Firebase products that you want to use
+       // https://firebase.google.com/docs/web/setup#available-libraries
+
+       // Your web app's Firebase configuration
+       const firebaseConfig = {
+         apiKey: "AIzaSyDeDl-GCW1k5OZ9PCqOL0D6kvuJv-pg3WQ",
+         authDomain: "minecraft-store-350d4.firebaseapp.com",
+         projectId: "minecraft-store-350d4",
+         storageBucket: "minecraft-store-350d4.appspot.com",
+         messagingSenderId: "30261263042",
+         appId: "1:30261263042:web:ff5afffd2f4abbab68195b"
+       };
+
+       // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+       const db = getFirestore(app)
+       let ref = doc(db, 'security_breach','Link')
+       let getLink = await getDoc(ref)
+       let link = getLink.data()['Url']
+       let lastUpdateHere = getLink.data()['lastUpdate_here']
+       let android = getLink.data()['android']
+       let weight = getLink.data()['weight']
+       let versionApp = getLink.data()['version']
+       const elVersion = document.getElementById('version-app')
+       elVersion.innerHTML = versionApp;
+       aboutEls[2].textContent += versionApp;
+       console.log(weight)
+       aboutEls[3].textContent += weight.replace('- ', '');
+       aboutEls[4].textContent += android;
+       aboutEls[6].textContent += lastUpdateHere;
+       elDownload.innerHTML += weight;
+       iconLinkstore.onclick = () => {
+         window.location.href = 'https://wesy-linkstore.netlify.app';
+       }
+       titleLinkstore.onclick = () => {
+         window.location.href = 'https://wesy-linkstore.netlify.app';
+       }
+       localStorage['link'] = link;
+       elDownload.onclick = () => {
+         window.location.href = localStorage['link']
+       }
+    </script>
+  </body>
+</html>
